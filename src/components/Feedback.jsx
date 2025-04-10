@@ -4,7 +4,7 @@ function Feedback({ feedback }) {
   const { good, neutral, bad } = feedback;
   const totalFeedback = good + neutral + bad;
   const positivePercentage = Math.round(
-    ((good + neutral) / totalFeedback) * 100
+    ((good) / totalFeedback) * 100
   );
 
   return (
